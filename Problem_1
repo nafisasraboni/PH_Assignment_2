@@ -1,0 +1,12 @@
+function matchWinner(teamAGoals, teamBGoals) {
+    if(typeof teamAGoals!=='number' || typeof teamBGoals!=='number'){
+        return "Invalid"; 
+    }else if(teamAGoals === teamBGoals){
+        return "Draw";
+    }else if(teamAGoals > teamBGoals){
+        return "Team A Won";
+    }else{
+        return "Team B Won";
+    }
+}
+console.log(matchWinner(5, null))
